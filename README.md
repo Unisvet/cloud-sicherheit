@@ -1,0 +1,3 @@
+Diese Anwendung ist speziell für Ihren Workshop konzipiert und soll den Teilnehmern helfen, die komplexen Themen auf eine ansprechende und leicht verständliche Weise zu erforschen.
+
+Die Anwendung führt die Benutzer durch eine logische Reise: von der grundlegenden Definition eines KI-Agenten über die neuen Risiken bis hin zu konkreten Verteidigungsstrategien und einer praktischen Checkliste. Der Schwerpunkt liegt auf Interaktivität – die Teilnehmer können Cloud-Anbieter vergleichen, Sicherheitsmodelle erkunden und ihre eigenen ersten Schritte abhaken. Das Design ist modern, klar und auf die Zielgruppe der KMU zugeschnitten.
