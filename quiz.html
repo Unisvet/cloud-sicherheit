@@ -40,15 +40,6 @@
             border-color: #EF4444;
             color: #991B1B;
         }
-        .hint-tooltip {
-            visibility: hidden;
-            opacity: 0;
-            transition: opacity 0.3s;
-        }
-        .hint-tooltip.visible {
-            visibility: visible;
-            opacity: 1;
-        }
     </style>
 </head>
 <body class="bg-slate-50 text-slate-800 flex items-center justify-center min-h-screen p-4 bg-grid-pattern">
@@ -79,19 +70,22 @@
                         <div id="progress-bar" class="bg-blue-600 h-2.5 rounded-full transition-all duration-500" style="width: 10%"></div>
                     </div>
                 </div>
-                <div class="flex items-start gap-4 mb-8">
-                    <h2 id="question-text" class="text-2xl md:text-3xl font-bold text-slate-900 flex-grow"></h2>
-                    <div class="relative">
-                        <button id="hint-btn" class="text-2xl hover:scale-110 transition-transform">💡</button>
-                        <div id="hint-box" class="hint-tooltip absolute left-1/2 -translate-x-1/2 bottom-full mb-2 w-64 bg-slate-800 text-white text-sm rounded-lg p-3 shadow-lg">
-                            <p id="hint-text"></p>
-                            <div class="absolute left-1/2 -translate-x-1/2 top-full w-0 h-0 border-x-8 border-x-transparent border-t-8 border-t-slate-800"></div>
-                        </div>
-                    </div>
-                </div>
+                <h2 id="question-text" class="text-2xl md:text-3xl font-bold text-slate-900 mb-8"></h2>
                 <div id="answer-options" class="grid grid-cols-1 md:grid-cols-2 gap-4">
                     <!-- Answer buttons will be injected here -->
                 </div>
+                
+                <!-- New Hint Section -->
+                <div id="hint-section" class="mt-6">
+                    <button id="hint-btn" class="flex items-center gap-2 text-sm font-semibold text-slate-500 hover:text-blue-600 transition-colors">
+                        <span>💡</span>
+                        Hinweis anzeigen
+                    </button>
+                    <div id="hint-box" class="hidden mt-3 p-4 bg-yellow-50 border-l-4 border-yellow-400 text-yellow-800 rounded-r-lg">
+                        <p id="hint-text"></p>
+                    </div>
+                </div>
+
                 <div id="feedback-container" class="mt-6 p-4 rounded-lg hidden">
                     <p id="feedback-text" class="text-sm"></p>
                 </div>
@@ -193,7 +187,7 @@
         nextBtn.addEventListener('click', showNextQuestion);
         restartBtn.addEventListener('click', startQuiz);
         hintBtn.addEventListener('click', () => {
-            hintBox.classList.toggle('visible');
+            hintBox.classList.toggle('hidden');
         });
 
         function shuffleArray(array) {
@@ -242,7 +236,7 @@
         function resetState() {
             nextBtn.disabled = true;
             feedbackContainer.classList.add('hidden');
-            hintBox.classList.remove('visible');
+            hintBox.classList.add('hidden');
             while (answerOptionsContainer.firstChild) {
                 answerOptionsContainer.removeChild(answerOptionsContainer.firstChild);
             }
