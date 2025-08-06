@@ -9,16 +9,6 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap" rel="stylesheet">
-    <!-- Chosen Palette: Calm Harmony -->
-    <!-- Application Structure Plan: Die Anwendung ist als geführte, thematische Reise konzipiert, die von allgemeinen zu spezifischen Konzepten führt. Sie beginnt mit einer fesselnden Einführung (der "Super-Praktikant"), erklärt dann die Grundlagen (Was ist ein Agent, warum die Cloud), stellt die Risiken interaktiv dar (OWASP Top 3), bietet einen dynamischen Lösungs-Dashboard (Vergleich der Cloud-Anbieter) und schließt mit einer praktischen, umsetzbaren Checkliste. Diese nicht-lineare, thematische Struktur wurde gewählt, um die Benutzerfreundlichkeit zu maximieren und den Teilnehmern eines Workshops zu ermöglichen, die für sie relevantesten Informationen schnell zu finden und zu verinnerlichen, anstatt sich durch einen langen, linearen Bericht arbeiten zu müssen. Die Interaktivität fördert das Engagement und das Verständnis. -->
-    <!-- Visualization & Content Choices: 
-        - Report Info: Evolution von Bots zu Agenten -> Goal: Vergleichen & Informieren -> Viz/Method: Interaktive, umdrehbare Karten (HTML/CSS/JS) -> Interaction: Klick -> Justification: Direkter visueller Vergleich der Komplexität und Autonomie mit konkreten Beispielen auf der Rückseite.
-        - Report Info: Shared Responsibility Model (Tabelle 1) -> Goal: Klären & Informieren -> Viz/Method: Interaktives Diagramm (HTML/CSS/JS) -> Interaction: Hover/Klick auf IaaS/PaaS/SaaS -> Justification: Macht ein trockenes, aber kritisches Konzept greifbar und leicht verständlich.
-        - Report Info: OWASP Top 3 Risiken -> Goal: Warnen & Aufklären -> Viz/Method: Tab-basierte interaktive Karten mit Analogie-Icons (HTML/CSS/JS) -> Interaction: Klick auf Tabs -> Justification: Fokussiert auf die wichtigsten Bedrohungen und nutzt die eingängigen Analogien des Berichts für besseres Behalten.
-        - Report Info: Vergleich der Sicherheits-Tools (Tabelle 2) -> Goal: Vergleichen & Entscheiden helfen -> Viz/Method: Dynamisches Balkendiagramm (Chart.js) -> Interaction: Auswahl des Cloud-Anbieters per Button -> Justification: Visualisiert den direkten Vergleich der Anbieter-Features, was eine zentrale Anforderung war, und macht die Daten leichter verdaulich als eine reine Tabelle.
-        - Report Info: Checkliste für erste Schritte -> Goal: Anleiten & Aktivieren -> Viz/Method: Interaktive Checkliste mit abhakbaren Punkten (HTML/JS) -> Interaction: Klick auf Checkboxen -> Justification: Gibt den Nutzern ein Gefühl von Fortschritt und liefert einen konkreten, umsetzbaren Plan.
-        - Library/Method: Chart.js für das Diagramm. Alle anderen Visualisierungen und Interaktionen mit HTML/CSS/JS. -->
-    <!-- CONFIRMATION: NO SVG graphics used. NO Mermaid JS used. -->
     <style>
         body { font-family: 'Inter', sans-serif; }
         .bg-grid { background-image: linear-gradient(to right, rgba(229, 231, 235, 0.5) 1px, transparent 1px), linear-gradient(to bottom, rgba(229, 231, 235, 0.5) 1px, transparent 1px); background-size: 2rem 2rem; }
@@ -49,6 +39,7 @@
                 <a href="#risks" class="text-gray-600 hover:text-blue-600">Risiken</a>
                 <a href="#defense" class="text-gray-600 hover:text-blue-600">Verteidigung</a>
                 <a href="#checklist" class="text-gray-600 hover:text-blue-600">Checkliste</a>
+                <a href="./quiz.html" class="font-semibold text-blue-600 hover:text-blue-800">Zum Quiz →</a>
                 <a href="https://www.digitalzentrum-spreeland.de/Veranstaltungen/event/529" target="_blank" class="bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-700 transition-colors">Zum Workshop</a>
             </div>
             <div class="md:hidden">
@@ -62,6 +53,7 @@
             <a href="#risks" class="block text-gray-600 hover:text-blue-600">Risiken</a>
             <a href="#defense" class="block text-gray-600 hover:text-blue-600">Verteidigung</a>
             <a href="#checklist" class="block text-gray-600 hover:text-blue-600">Checkliste</a>
+            <a href="./quiz.html" class="block font-semibold text-blue-600 hover:text-blue-800">Zum Quiz →</a>
             <a href="https://www.digitalzentrum-spreeland.de/Veranstaltungen/event/529" target="_blank" class="block bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-700 transition-colors text-center">Zum Workshop</a>
         </div>
     </header>
